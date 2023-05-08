@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <body>
+        <title>To-Do List</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+      </head>
+</head>
+
+  <body>
+    <div class="container">
+      <div class="container1">
+        <h1>To-Do List</h1>
+      </div>
+      <form>
+        <input type="text" placeholder="Enter task...">
+        <select>
+          <option value="low">Low priority</option>
+          <option value="medium">Medium priority</option>
+          <option value="high">High priority</option>
+        </select>
+        <button type="submit">Add</button>
+      </form>
+      <div class="filter">
+        <button data-filter="all">All</button>
+        <button data-filter="low">Low priority</button>
+        <button data-filter="medium">Medium priority</button>
+        <button data-filter="high">High priority</button>
+      </div>
+      <ul class="tasks"></ul>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
